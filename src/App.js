@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <NavBar />
         <Switch>
-          <Route exact path='/' component={CharacterList} />
+          <Route exact path='/' component={CharacterList} key={CharacterList} />
           <Route path='/:id' component={CharacterDetail} />
         </Switch>
         <Footer />

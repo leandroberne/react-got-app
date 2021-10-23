@@ -9,5 +9,10 @@ In the project directory, you can run:
 ### Dependencias utilizadas
 
 Axios
+Fetch API (ES6)
 Semantic UI
 React Router DOM
+
+### Fake API REST utilizada
+
+https://thronesapi.com/
