@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Character from './Character';
 import { Link } from 'react-router-dom';
 import Spinner from './Spinner';
-import SearchChar from './Search';
+import SearchChar from './SearchChar';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
