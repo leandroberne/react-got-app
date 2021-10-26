@@ -1,18 +1,18 @@
-# Getting Started with Create React App
+# Game of Thrones Character App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto pequeño creado en ReactJS mediante el consumo de una fake api rest.
 
-## Available Scripts
+## Introducción
 
-In the project directory, you can run:
+"Game of Thrones" Character App es una aplicación simple (con tematica de la serie "Game of Thrones" de HBO) que muestra una grilla con los personajes en tarjetas, un detalle de los mismos al realizar un click sobre ellos y un buscador de personajes (por primer nombre).
 
-### Dependencias utilizadas
+## Dependencias utilizadas
 
-Axios
-Fetch API (ES6)
-Semantic UI
-React Router DOM
+- Axios
+- Fetch API (ES6)
+- Semantic UI (Diseño)
+- React Router DOM
 
-### Fake API REST utilizada
+## Fake API REST utilizada
 
 https://thronesapi.com/

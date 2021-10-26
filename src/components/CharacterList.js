@@ -7,23 +7,29 @@ import SearchChar from './SearchChar';
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [firstName, setFirstName] = useState('');
+  const [firstName, setFirstName] = useState(undefined);
+
+  const firstNameFiltered =
+    firstName && firstName.toLocaleLowerCase().replace(/ /g, '');
 
   useEffect(() => {
     fetch('https://thronesapi.com/api/v2/Characters')
       .then((res) => res.json())
       .then((data) => {
         setCharacters(
-          firstName === ''
-            ? data
-            : data.filter((element) => element.firstName === firstName)
+          firstName
+            ? data.filter(
+                (element) =>
+                  element.firstName.toLocaleLowerCase() === firstNameFiltered
+              )
+            : data
         );
       });
 
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-  }, [firstName]);
+  }, [firstName, firstNameFiltered]);
 
   return (
     <>

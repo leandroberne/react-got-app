@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Spinner from './Spinner';
+import { Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 const CharacterDetail = ({ match }) => {
   const [character, setCharacter] = useState([]);
@@ -31,6 +33,9 @@ const CharacterDetail = ({ match }) => {
             <p>Apellido: {character.lastName}</p>
             <p>Titulo: {character.title}</p>
             <p>House: {character.family}</p>
+            <Link className='Link' to='/'>
+              <Button color='red'>Volver atras</Button>
+            </Link>
           </div>
         </div>
       </div>
